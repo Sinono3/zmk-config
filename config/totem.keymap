@@ -70,6 +70,20 @@
             layers = <0 2 1 3 4>;
             timeout-ms = <50>;
         };
+
+        leftmouseclick {
+            bindings = <&mkp MB1>;
+            key-positions = <17 18 16>;
+            timeout-ms = <50>;
+            layers = <7>;
+        };
+
+        rightmouseclick {
+            bindings = <&mkp MB2>;
+            key-positions = <6 8 7>;
+            timeout-ms = <50>;
+            layers = <7>;
+        };
     };
 
     keymap {
@@ -147,7 +161,7 @@
             label = "Gaming+";
         };
 
-        scroll {
+        Mouse {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
